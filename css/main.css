@@ -1,0 +1,32 @@
+/* @import './root.css'; */
+@import './reset.css';
+@import './commonUse.css';
+@import './header.css';
+@import './introduction.css';
+@import './classicGlassFrame.css';
+@import './container.css';
+@import './contact.css';
+@import './footer.css';
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.wrap {
+    max-width: 1920px;
+    width: 100%;
+    min-width: 375px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1560px) {
+    .wrap {
+        width: 768px;
+    }
+}
+
+@media (max-width: 767px) {
+    .wrap {
+        width: 375px;
+    }
+}

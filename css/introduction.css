@@ -1,0 +1,147 @@
+.introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 9rem;
+}
+
+.introduction>h2 {
+    font-size: 3rem;
+    line-height: 4.1875rem;
+    margin-bottom: 2.75rem;
+}
+
+.introduction-list {
+    /* margin: 0 18.75%; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.introduction-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 282px;
+    min-height: 289px;
+    padding: 0 37px;
+    box-sizing: border-box;
+}
+
+.introduction-item:not(:first-child) {
+    margin-left: 1.5rem;
+}
+
+.introduction-item-img {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+    padding-top: 1rem;
+}
+
+.introduction-item>h3 {
+    font-size: 1.5rem;
+    line-height: 2.0625rem;
+    margin-bottom: 1rem;
+    font-weight: bolder;
+    color: #650300;
+}
+
+.introduction-item>p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+@media (max-width: 1560px) {
+    .introduction {
+        padding-bottom: 5.5rem;
+    }
+
+    .introduction>h2 {
+        font-size: 2rem;
+        line-height: 2.1825rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .introduction-list {
+        justify-content: space-around;
+    }
+
+    .introduction-item {
+        max-width: 324px;
+        min-height: 256px;
+        padding: 0 50px;
+    }
+
+    .introduction-item:not(:first-child) {
+        margin-left: 0;
+    }
+
+    .introduction-item:nth-child(2) {
+        margin-bottom: 0.75rem;
+    }
+
+    .introduction-item:nth-child(3) {
+        order: 1;
+        margin-bottom: 0.75rem;
+    }
+
+    .introduction-item:nth-child(1) {
+        order: 2;
+    }
+
+    .introduction-item:nth-child(4) {
+        order: 3;
+    }
+
+    .introduction-item-img {
+        height: 80px;
+        margin-bottom: 1rem;
+        padding-top: 1.25rem;
+    }
+
+    .introduction-item-img>img {
+        width: 80%;
+    }
+
+    .introduction-item>h3 {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .introduction {
+        padding-bottom: 4.5rem;
+    }
+
+    .introduction>h2 {
+        font-size: 1.5rem;
+        line-height: 2.0625rem;
+        margin-bottom: .75rem;
+    }
+
+    .introduction-list {
+        justify-content: center;
+    }
+
+    .introduction-item {
+        max-width: 352px;
+        min-height: auto;
+        padding: 1.25rem 64px 0 64px;
+        margin-bottom: 0 !important;
+    }
+
+    .introduction-item-img {
+        padding-top: 0rem;
+    }
+
+    .introduction-item>p {
+        margin-bottom: .5rem;
+    }
+}
+
+@media (max-width: 375px) {}

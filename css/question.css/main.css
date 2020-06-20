@@ -1,0 +1,228 @@
+@import '../reset.css';
+@import '../header.css';
+@import '../footer.css';
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.wrap {
+    max-width: 1920px;
+    width: 100%;
+    min-width: 375px;
+    margin: 0 auto;
+}
+
+.header-container {
+    background: url(../../images/questionImg/question_bg_img.png) no-repeat;
+    height: 304px;
+    padding-right: 0%;
+    padding-left: 18.75%;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-mainTitle {
+    color: #000000;
+}
+
+.header-container svg {
+    margin-left: 10.1px;
+}
+
+.container {
+    padding-top: 24px;
+    padding-bottom: 156px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.question-main {
+    width: 1200px;
+}
+
+.question-main>h2 {
+    font-size: 32px;
+    line-height: 45px;
+    font-weight: bolder;
+    margin-bottom: 16px;
+}
+
+.question-item-main {
+    border: 1px solid #000000;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question-item:not(:first-child) .question-item-main {
+    border-top: none;
+}
+
+.question-item-main>p {
+    font-size: 20px;
+    line-height: 28px;
+    margin-left: 38px;
+    font-weight: bolder;
+}
+
+.question-item-main>svg {
+    margin-right: 39.75px;
+    cursor: pointer;
+}
+
+.question-item-slidedown {
+    border: 1px solid #000000;
+    border-top: none;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    padding-left: 38px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    display: none;
+}
+
+.question-item-slidedown>p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.arrangement {
+    display: none;
+}
+
+@media (max-width: 1560px) {
+    .wrap {
+        width: 768px;
+    }
+
+    .header-container {
+        background: url(../../images/questionImg/ipad/question_bg_img.png) no-repeat;
+        padding-left: 6.25%;
+    }
+
+    .header-mainTitle {
+        color: #000000;
+        font-size: 48px;
+        line-height: 67px;
+    }
+
+    .header-container svg {
+        width: 48px;
+        height: 48px;
+        margin-left: 16px;
+    }
+
+    .question-main {
+        width: 672px;
+    }
+
+    .question-main>h2 {
+        font-size: 28px;
+        line-height: 40px;
+        margin-bottom: 32px;
+    }
+
+    .question-item-main {
+        height: 54px;
+    }
+
+    .question-item-main>p {
+        font-size: 16px;
+        line-height: 22px;
+        margin-left: 24px;
+    }
+
+    .question-item-main>svg {
+        width: 38.99px;
+        height: 24px;
+        margin-right: 24.01px;
+    }
+
+    .question-item-slidedown {
+        flex-direction: column;
+        padding: 16px 24px;
+    }
+
+    .question-item-slidedown>p {
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+
+@media (max-width: 767px) {
+    .wrap {
+        width: 375px;
+    }
+
+    .header-container {
+        background: url(../../images/questionImg/phone/question_bg_img.png) no-repeat;
+        padding-left: 2.93%;
+        height: 143px;
+    }
+
+    .header-mainTitle {
+        color: #000000;
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .header-container svg {
+        width: 24px;
+        height: 24px;
+        margin-left: 8px;
+        background-color: #fff;
+        border-radius: 50%;
+    }
+
+    .question-main {
+        width: 352px;
+    }
+
+    .question-main>h2 {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 16px;
+    }
+
+    .question-item-main>p {
+        margin-left: 16px;
+    }
+
+    .question-item-main>svg {
+        margin-right: 8.01px;
+    }
+
+    .question-item-slidedown {
+        padding: 16px;
+    }
+
+    .question-item:nth-child(1) .question-item-slidedown>p:nth-child(1)::after {
+        content: '當日購買JINS盒裝眼鏡，搭配薄型非球面鏡片980元(隔日後則為1480元)，搭配功能型鏡片則依鏡片種類加價購買。';
+    }
+
+    .question-item:nth-child(1) .question-item-slidedown>p:nth-child(2) {
+        display: none;
+    }
+
+    .arrangement {
+        display: block;
+        visibility: hidden;
+    }
+}
+
+.slidedownBtn {
+    transition-duration: 0.8s;
+}
+
+.animate {
+    transform: rotate(180deg);
+}

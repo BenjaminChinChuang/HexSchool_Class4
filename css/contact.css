@@ -1,0 +1,238 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #AA06010D;
+}
+
+.contact>* {
+    width: 41.25%;
+}
+
+.contact-title {
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-title>h1 {
+    font-size: 48px;
+    line-height: 67px;
+    font-weight: bolder;
+    padding-bottom: 24px;
+}
+
+.contact-title>p {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+#InputForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 92px;
+}
+
+.inputArea {
+    padding-bottom: 16px;
+}
+
+.inputArea>p {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 4px;
+}
+
+.inputArea>input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    line-height: 50px;
+    font-size: 16px;
+    padding-left: 16px;
+}
+
+.inputArea>input::placeholder,
+.inputArea>textarea::placeholder {
+    color: #cac3c3;
+}
+
+.inputArea>textarea {
+    width: 100%;
+    padding: 0;
+    resize: none;
+    box-sizing: border-box;
+}
+
+#opinion {
+    height: 136px;
+    padding-top: 14px;
+    padding-left: 16px;
+}
+
+.inputArea>textarea::placeholder {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.checkArea {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 42px;
+}
+
+.checkArea>input[type="checkbox"] {
+    margin-right: 4px;
+    cursor: pointer;
+    /* font-size: 14px; */
+    min-width: 20px;
+    min-height: 20px;
+    position: relative;
+}
+
+.checkArea>input[type="checkbox"]:after {
+    position: absolute;
+    min-width: 17px;
+    min-height: 17px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    content: " ";
+    background-color: #FBF2F2;
+    color: #000000;
+    display: inline-block;
+    visibility: visible;
+    border-radius: 3px;
+    border: 2px solid #000000;
+}
+
+input[type=checkbox]:checked:after {
+    content: "✓";
+    background-color: #000000;
+    border: none;
+    min-width: 19px;
+    min-height: 19px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+}
+
+.checkArea>p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.submitArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#submit {
+    width: 180px;
+    height: 54px;
+    padding: 16px 58px;
+    background-color: #AA0601;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #650300;
+}
+
+@media (max-width: 1560px) {
+    .contact>* {
+        width: 64.58%;
+    }
+
+    .contact-title {
+        padding-bottom: 16px;
+    }
+
+    .contact-title>h1 {
+        font-size: 32px;
+        line-height: 45px;
+        padding-bottom: 16px;
+    }
+
+    .contact-title>p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    #InputForm {
+        margin-bottom: 56px;
+    }
+
+    .inputArea {
+        padding-bottom: 12px;
+    }
+
+    .inputArea>input {
+        line-height: 50px;
+        font-size: 16px;
+    }
+
+    .checkArea {
+        margin-bottom: 24px;
+        align-items: flex-start;
+    }
+
+    #submit {
+        width: 136px;
+        height: 36px;
+        padding: 7px 36px;
+    }
+}
+
+@media (max-width: 767px) {
+    .contact>* {
+        width: 87.2%;
+    }
+
+    .contact-title {
+        padding-bottom: 8px;
+    }
+
+    .contact-title>h1 {
+        font-size: 20px;
+        line-height: 28px;
+        padding-bottom: 8px;
+    }
+
+    #InputForm {
+        margin-bottom: 48px;
+    }
+
+    .inputArea>input {
+        line-height: 36px;
+        font-size: 16px;
+        padding-left: 12px;
+    }
+
+    #opinion {
+        height: 100px;
+        padding-top: 7px;
+        padding-left: 12px;
+    }
+
+    .inputArea>p {
+        margin-bottom: 2px;
+    }
+
+    .checkArea {
+        margin-bottom: 20px;
+    }
+
+    .checkArea>p {
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+
+@media (max-width: 375px) {}

@@ -1,0 +1,349 @@
+.coDesign {
+    box-sizing: border-box;
+    padding-top: 4rem;
+    padding-bottom: 9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coDesign>.title {
+    color: #ffffff;
+    font-size: 3rem;
+    line-height: 4.1875rem;
+}
+
+.coDesign-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.coDesign-item:not(:last-child) {
+    margin-bottom: 60px;
+}
+
+.coDesign-item:nth-child(2) {
+    margin-left: 8px;
+}
+
+.coDesign-item:nth-child(2)>img {
+    margin-bottom: 8px;
+}
+
+.coDesign-item-sub {
+    display: flex;
+    justify-content: space-between;
+}
+
+.coDesign-item-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.moreBtn-area {
+    height: 167px;
+    background-image: url(../images/coDesingImg/coDesign_p2_4.png);
+    background-repeat: no-repeat;
+    background-position: right 83px top;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.moreBtn-area>a {
+    text-decoration: none;
+}
+
+.moreBtn {
+    width: 315px;
+    height: 105px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moreBtn-animation {
+    position: relative;
+}
+
+.moreBtn-animation-a1,
+.moreBtn-animation-a2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+    transition: top 0.8s cubic-bezier(0.250, 1, 0.785, 0.990);
+    -webkit-transition: top 0.8s cubic-bezier(0.250, 1, 0.785, 0.990);
+    -webkit-transition: top 0.8s cubic-bezier(0.250, 1, 0.785, 0.990);
+    -moz-transition: top 0.8s cubic-bezier(0.250, 1, 0.785, 0.990);
+    -o-transition: top 0.8s cubic-bezier(0.250, 1, 0.785, 0.990);
+}
+
+.moreBtn-animation-a2 {
+    opacity: 0.8;
+}
+
+.moreBtn:hover .moreBtn-animation-a1 {
+    top: -152%;
+    opacity: 0.3;
+}
+
+.moreBtn:hover .moreBtn-animation-a2 {
+    top: -92%;
+    opacity: 0.6;
+}
+
+.moreBtn p {
+    font-size: 72px;
+    line-height: 95px;
+    font-weight: bolder;
+    color: #AA0601;
+}
+
+.moreBtn svg {
+    margin-left: 17px;
+    transition: transform 0.8s cubic-bezier(0.250, 1, 0.785, 0.990);
+    -webkit-transition: transform 0.8s cubic-bezier(0.250, 1, 0.785, 0.990);
+    -webkit-transition: transform 0.8s cubic-bezier(0.250, 1, 0.785, 0.990);
+    -moz-transition: transform 0.8s cubic-bezier(0.250, 1, 0.785, 0.990);
+    -o-transition: transform 0.8s cubic-bezier(0.250, 1, 0.785, 0.990);
+}
+
+.moreBtn:hover svg {
+    transform: translateX(25%);
+}
+
+.coDesign-item:nth-child(3) {
+    display: flex;
+    justify-content: center;
+}
+
+.coDesign-item-3 {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/coDesingImg/coDesign_p3_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 585px;
+    height: 592px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coDesign-item-3:last-child {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/coDesingImg/coDesign_p3_2.png);
+}
+
+.coDesign-item-3:first-child {
+    margin-right: 30px;
+}
+
+.coDesign-item-3>h2 {
+    font-size: 72px;
+    line-height: 95px;
+    font-weight: bolder;
+    color: #AA0601;
+}
+
+@media (max-width: 1560px) {
+    .coDesign {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .coDesign>.title {
+        font-size: 2rem;
+        line-height: 2.8125rem;
+        margin-bottom: 2rem;
+    }
+
+    .coDesign-item:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    .coDesign-item:nth-child(1)>img {
+        content: url(../images/coDesingImg/ipad/coDesign_p1.png);
+    }
+
+    .coDesign-item:nth-child(2)>img {
+        content: url(../images/coDesingImg/ipad/coDesign_p2_1.png);
+        margin-bottom: 3px;
+    }
+
+    .coDesign-item:nth-child(2) {
+        margin-left: 3px;
+    }
+
+    .coDesign-item-sub>img {
+        content: url(../images/coDesingImg/ipad/coDesign_p2_2.png);
+    }
+
+    .coDesign-item-inner>img {
+        content: url(../images/coDesingImg/ipad/coDesign_p2_3.png);
+    }
+
+    .moreBtn-area {
+        height: 77px;
+        background: url(../images/coDesingImg/ipad/coDesign_p2_4.png) no-repeat;
+        background-position: right 47px top;
+    }
+
+    .moreBtn {
+        width: 178px;
+        height: 59px;
+    }
+
+    .moreBtn p {
+        font-size: 40px;
+        line-height: 53px;
+    }
+
+    .moreBtn svg {
+        margin-left: 10.04px;
+        width: 27.1px;
+        height: 27.1px;
+    }
+
+    .moreBtn:hover .moreBtn-animation-a1 {
+        top: -195%;
+    }
+
+    .moreBtn:hover .moreBtn-animation-a2 {
+        top: -92%;
+    }
+
+    .coDesign-item-3 {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/coDesingImg/ipad/coDesign_p3_1.png);
+        width: 322px;
+        height: 280px;
+    }
+
+    .coDesign-item-3:last-child {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/coDesingImg/ipad/coDesign_p3_2.png);
+    }
+
+    .coDesign-item-3:first-child {
+        margin-right: 24px;
+    }
+
+    .coDesign-item-3>h2 {
+        font-size: 2rem;
+        line-height: 43px;
+    }
+}
+
+@media (max-width: 767px) {
+    .coDesign {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .coDesign>.title {
+        font-size: 1.5rem;
+        line-height: 2.0625rem;
+        margin-bottom: 1rem;
+    }
+
+    .coDesign-item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .coDesign-item:nth-child(1)>img {
+        content: url(../images/coDesingImg/phone/coDesign_p1.png);
+    }
+
+    /*---------------------------------------------------------------------------*/
+
+    .coDesign-item:nth-child(2) {
+        margin-left: 2px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .coDesign-item:nth-child(2)>img {
+        content: url(../images/coDesingImg/phone/coDesign_p2_1.png);
+        margin-bottom: 2px;
+    }
+
+    .coDesign-item-sub {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .coDesign-item-sub>img {
+        content: url(../images/coDesingImg/phone/coDesign_p2_3.png);
+        margin-bottom: 2px;
+    }
+
+    .coDesign-item-inner {
+        flex-direction: row;
+    }
+
+    .coDesign-item-inner>img {
+        content: url(../images/coDesingImg/phone/coDesign_p2_2.png);
+    }
+
+    .moreBtn-area {
+        height: auto;
+        margin-left: 2px;
+        background: url(../images/coDesingImg/phone/coDesign_p2_4.png) no-repeat;
+        background-position: center left 0;
+    }
+
+    .moreBtn {
+        width: 124px;
+        height: 41px;
+        margin-left: 13px;
+    }
+
+    .moreBtn p {
+        font-size: 26px;
+        line-height: 34px;
+    }
+
+    .moreBtn svg {
+        margin-left: .5rem;
+        width: 18px;
+        height: 18px;
+    }
+
+    .moreBtn:hover .moreBtn-animation-a1 {
+        top: 0%;
+    }
+
+    .moreBtn:hover .moreBtn-animation-a2 {
+        top: 0%;
+    }
+
+    .moreBtn:hover svg {
+        transform: translateX(0%);
+    }
+
+    .coDesign-item:nth-child(3) {
+        flex-wrap: wrap;
+    }
+
+    .coDesign-item-3 {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/coDesingImg/phone/coDesign_p3_1.png);
+        width: 352px;
+        height: 284px;
+    }
+
+    .coDesign-item-3:last-child {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/coDesingImg/phone/coDesign_p3_2.png);
+    }
+
+    .coDesign-item-3:first-child {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    .coDesign-item-3>h2 {
+        font-size: 2rem;
+        line-height: 43px;
+    }
+}
+
+@media (max-width: 375px) {}

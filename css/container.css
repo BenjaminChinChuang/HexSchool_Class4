@@ -1,0 +1,21 @@
+@import './coDesign.css';
+@import './recommend.css';
+
+.container {
+    background-image: url(../images/coDesingImg/coDesign_bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background: url(../images/coDesingImg/coDesign_bg.png) center fixed no-repeat; */
+}
+
+@media (max-width: 1560px) {
+    .container {
+        background-image: url(../images/coDesingImg/ipad/coDesign_bg.png);
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        background-image: url(../images/coDesingImg/phone/coDesign_bg.png);
+    }
+}

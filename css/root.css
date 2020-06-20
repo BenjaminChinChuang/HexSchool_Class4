@@ -1,0 +1,10 @@
+:root {
+    /* common use variable*/
+    --text-mainTitle: 48px;
+    --text-small-navigation: 16px;
+
+    /* header variable*/
+    --header-navigation-hight: 108px;
+    --text-header-mainTitle: 36px;
+    --text-header-subTitle: 64px;
+}
